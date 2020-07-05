@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  xmlns:th="https://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Pixel Color Palette</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <h1>test  dlfsafjaf joawe a; </h1>
     <p>tsefds fa fa<br>sd a sd a faf </p>
+    <div>
+        <form method="POST" enctype="multipart/form-data" action="/getPalette">
+            <h3>Get palette of image</h3>
+            <input id="image" type="file" name="image" required/>
+            <button type="submit">Get palette</button>
+        </form>
+    </div>
+
 </body>
 </html>
